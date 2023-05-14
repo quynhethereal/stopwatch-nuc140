@@ -1,0 +1,452 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.30.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Quynh Le, NA, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.30.0.0
+Toolchain Path:  D:\Keil\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.30.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.3.0
+Target DLL:      NULink\Nu_Link.dll V3.02
+Dialog DLL:      TARMCM1.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+C:\Users\T470S\Downloads\Assignment3_Exe3\Assignment3_Exe3.uvprojx
+Project File Date:  05/14/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'D:\Keil\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(150): warning: In file included from...
+C:/Keil_v5/Library/CMSIS/Include\core_cm0.h(116): warning: In file included from...
+C:/Keil_v5/Library/CMSIS/Include\core_cmInstr.h(406): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(150): warning: In file included from...
+C:/Keil_v5/Library/CMSIS/Include\core_cm0.h(574): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Keil_v5/Library/CMSIS/Include\core_cm0.h(577): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    NVIC->IP[_IP_IDX(IRQn)] = (NVIC->IP[_IP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Keil_v5/Library/CMSIS/Include\core_cm0.h(608): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(11321): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+    union
+    ^
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13605): warning: non-portable path to file '"sys.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "SYS.h"
+         ^~~~~~~
+         "sys.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13606): warning: non-portable path to file '"adc.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "ADC.h"
+         ^~~~~~~
+         "adc.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13607): warning: non-portable path to file '"fmc.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "FMC.h"
+         ^~~~~~~
+         "fmc.h"
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13607): warning: In file included from...
+C:/Keil_v5/Library/StdDriver/Include\FMC.h(314): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    FMC->ISPADR = (u8index << 2);      /* Set UID Address. It must be word alignment. */
+                ~  ~~~~~~~~^~~~
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13608): warning: non-portable path to file '"gpio.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "GPIO.h"
+         ^~~~~~~~
+         "gpio.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13609): warning: non-portable path to file '"i2c.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "I2C.h"
+         ^~~~~~~
+         "i2c.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13610): warning: non-portable path to file '"pwm.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "PWM.h"
+         ^~~~~~~
+         "pwm.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13611): warning: non-portable path to file '"spi.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "SPI.h"
+         ^~~~~~~
+         "spi.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13612): warning: non-portable path to file '"crc.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "CRC.h"
+         ^~~~~~~
+         "crc.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13613): warning: non-portable path to file '"timer.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "TIMER.h"
+         ^~~~~~~~~
+         "timer.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13614): warning: non-portable path to file '"wdt.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "WDT.h"
+         ^~~~~~~
+         "wdt.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13615): warning: non-portable path to file '"wwdt.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "WWDT.h"
+         ^~~~~~~~
+         "wwdt.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13616): warning: non-portable path to file '"rtc.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "RTC.h"
+         ^~~~~~~
+         "rtc.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13617): warning: non-portable path to file '"uart.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "UART.h"
+         ^~~~~~~~
+         "uart.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13618): warning: non-portable path to file '"i2s.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "I2S.h"
+         ^~~~~~~
+         "i2s.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13619): warning: non-portable path to file '"can.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "CAN.h"
+         ^~~~~~~
+         "can.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13620): warning: non-portable path to file '"usbd.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "USBD.h"
+         ^~~~~~~~
+         "usbd.h"
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13620): warning: In file included from...
+C:/Keil_v5/Library/StdDriver/Include\USBD.h(638): warning: variable 'u32CfgAddr' may be uninitialized when used here [-Wconditional-uninitialized]
+    return ((*((__IO uint32_t *)(u32CfgAddr))) & USBD_CFGP_SSTALL);
+                                 ^~~~~~~~~~
+C:/Keil_v5/Library/StdDriver/Include\USBD.h(622): note: initialize the variable 'u32CfgAddr' to silence this warning
+    uint32_t u32CfgAddr;
+                       ^
+                        = 0
+main.c(3): warning: In file included from...
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13621): warning: non-portable path to file '"pdma.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "PDMA.h"
+         ^~~~~~~~
+         "pdma.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13622): warning: non-portable path to file '"sc.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "SC.h"
+         ^~~~~~
+         "sc.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13623): warning: non-portable path to file '"ps2.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "PS2.h"
+         ^~~~~~~
+         "ps2.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13624): warning: non-portable path to file '"clk.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "CLK.h"
+         ^~~~~~~
+         "clk.h"
+C:/Keil_v5/Library/NUC100Series/Include\NUC100Series.h(13625): warning: non-portable path to file '"acmp.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "ACMP.h"
+         ^~~~~~~~
+         "acmp.h"
+main.c(73): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b10000010, // Number 0          // ---a----
+        ^
+main.c(74): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b11101110, // Number 1          // |      |
+        ^
+main.c(75): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b00000111, // Number 2          // f      b
+        ^
+main.c(76): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b01000110, // Number 3          // |      |
+        ^
+main.c(77): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b01101010, // Number 4          // ---g----
+        ^
+main.c(78): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b01010010, // Number 5          // |      |
+        ^
+main.c(79): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b00010010, // Number 6          // e      c
+        ^
+main.c(80): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b11100110, // Number 7          // |      |
+        ^
+main.c(81): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b00000010, // Number 8          // ---d----
+        ^
+main.c(82): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b01000010, // Number 9
+        ^
+main.c(83): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        0b11111111      // Blank LED
+        ^
+main.c(71): warning: no previous extern declaration for non-static variable 'pattern' [-Wmissing-variable-declarations]
+int pattern[] = {
+    ^
+main.c(71): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int pattern[] = {
+^
+main.c(97): warning: no previous extern declaration for non-static variable 'is_K1_Pressed' [-Wmissing-variable-declarations]
+volatile bool is_K1_Pressed = false;
+              ^
+main.c(97): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile bool is_K1_Pressed = false;
+         ^
+D:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+main.c(98): warning: no previous extern declaration for non-static variable 'is_K9_Pressed' [-Wmissing-variable-declarations]
+volatile bool is_K9_Pressed = false;
+              ^
+main.c(98): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile bool is_K9_Pressed = false;
+         ^
+D:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+main.c(99): warning: no previous extern declaration for non-static variable 'is_K5_Pressed' [-Wmissing-variable-declarations]
+volatile bool is_K5_Pressed = false;
+              ^
+main.c(99): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile bool is_K5_Pressed = false;
+         ^
+D:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+main.c(119): warning: no previous extern declaration for non-static variable 'Lap_Record_List' [-Wmissing-variable-declarations]
+struct Lap_Record Lap_Record_List[5] = {0}; // 5 lap records
+                  ^
+main.c(119): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+struct Lap_Record Lap_Record_List[5] = {0}; // 5 lap records
+^
+main.c(170): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                default:
+                ^
+main.c(196): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        CLK->CLKSEL0 &= ~(0b111 << 0);
+                          ^
+main.c(196): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        CLK->CLKSEL0 &= ~(0b111 << 0);
+                     ~~ ^~~~~~~~~~~~~
+main.c(198): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        CLK->CLKDIV &= ~(0xF);
+                    ~~ ^~~~~~
+main.c(205): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PA->PMD &= (~(0b11 << 6));
+                      ^
+main.c(205): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PA->PMD &= (~(0b11 << 6));
+                ~~  ^~~~~~~~~~~~
+main.c(206): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PA->PMD |= (0b01 << 6);
+                    ^
+main.c(207): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PA->PMD &= (~(0b11 << 8));
+                      ^
+main.c(207): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PA->PMD &= (~(0b11 << 8));
+                ~~  ^~~~~~~~~~~~
+main.c(208): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PA->PMD |= (0b01 << 8);
+                    ^
+main.c(209): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PA->PMD &= (~(0b11 << 10));
+                      ^
+main.c(209): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PA->PMD &= (~(0b11 << 10));
+                ~~  ^~~~~~~~~~~~~
+main.c(210): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PA->PMD |= (0b01 << 10);
+                    ^
+main.c(236): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PC->PMD &= (~(0xFF << 8));        // clear PMD[15:8]
+                ~~  ^~~~~~~~~~~~
+main.c(237): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PC->PMD |= (0b01010101 << 8); // Set output push-pull for PC4 to PC7
+                    ^
+main.c(239): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PE->PMD &= (~(0xFFFF << 0));            // clear PMD[15:0]
+                ~~  ^~~~~~~~~~~~~~
+main.c(240): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PE->PMD |= 0b0101010101010101 << 0; // Set output push-pull for PE0 to PE7
+                   ^
+main.c(247): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PC->PMD &= ~(0b11 << 24);
+                     ^
+main.c(247): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PC->PMD &= ~(0b11 << 24);
+                ~~ ^~~~~~~~~~~~~
+main.c(248): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PC->PMD |= 0b01 << 24;
+                   ^
+main.c(251): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PC->PMD &= ~(0b11 << 28);
+                     ^
+main.c(251): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PC->PMD &= ~(0b11 << 28);
+                ~~ ^~~~~~~~~~~~~
+main.c(252): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PC->PMD |= 0b01 << 28;
+                   ^
+main.c(256): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PC->PMD &= ~(0b11 << 26);
+                     ^
+main.c(256): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PC->PMD &= ~(0b11 << 26);
+                ~~ ^~~~~~~~~~~~~
+main.c(257): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PC->PMD |= 0b01 << 26;
+                   ^
+main.c(264): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIO->DBNCECON &= ~(0xF << 0);
+                       ~~ ^~~~~~~~~~~
+main.c(272): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        PB->PMD &= ~(0b11 << 30);
+                     ^
+main.c(272): warning: signed shift result (0xC0000000) sets the sign bit of the shift expression's type ('int') and becomes negative [-Wshift-sign-overflow]
+        PB->PMD &= ~(0b11 << 30);
+                     ~~~~ ^  ~~
+main.c(312): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                PC->DOUT &= ~(1 << 6); // SC3
+                         ~~ ^~~~~~~~~
+main.c(313): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                PC->DOUT &= ~(1 << 5); // SC2
+                         ~~ ^~~~~~~~~
+main.c(314): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                PC->DOUT &= ~(1 << 4); // SC1
+                         ~~ ^~~~~~~~~
+main.c(315): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                PE->DOUT = pattern[number_to_display];
+                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(324): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                PE->DOUT = pattern[number_to_display];
+                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(333): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                PE->DOUT = pattern[number_to_display];
+                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(339): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                PC->DOUT &= ~(1 << 6); // SC3
+                         ~~ ^~~~~~~~~
+main.c(340): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                PC->DOUT &= ~(1 << 5); // SC2
+                         ~~ ^~~~~~~~~
+main.c(341): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                PC->DOUT &= ~(1 << 7); // SC1
+                         ~~ ^~~~~~~~~
+main.c(342): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                PE->DOUT = pattern[number_to_display];
+                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(359): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PC->DOUT &= ~(1 << 7);
+                 ~~ ^~~~~~~~~
+main.c(360): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PC->DOUT &= ~(1 << 6); // SC3
+                 ~~ ^~~~~~~~~
+main.c(361): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PC->DOUT &= ~(1 << 5); // SC2
+                 ~~ ^~~~~~~~~
+main.c(362): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PC->DOUT &= ~(1 << 4); // SC1
+                 ~~ ^~~~~~~~~
+main.c(379): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PA->DOUT &= ~(1 << 3);
+                 ~~ ^~~~~~~~~
+main.c(396): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        PA->DOUT &= ~(1 << 5);
+                 ~~ ^~~~~~~~~
+main.c(406): warning: no previous prototype for function 'Hanlde_Keypad_Button_Press' [-Wmissing-prototypes]
+void Hanlde_Keypad_Button_Press(void)
+     ^
+main.c(406): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Hanlde_Keypad_Button_Press(void)
+^
+static 
+main.c(495): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        CLK->CLKSEL1 &= ~(0b111 << 8);
+                          ^
+main.c(495): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        CLK->CLKSEL1 &= ~(0b111 << 8);
+                     ~~ ^~~~~~~~~~~~~
+main.c(496): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        CLK->CLKSEL1 |= (0b001 << 8); // Clock is 32.768Khz
+                         ^
+main.c(498): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIMER0->TCSR &= ~(0xFF << 0);
+                     ~~ ^~~~~~~~~~~~
+main.c(502): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        TIMER0->TCSR &= ~(0b11 << 27);
+                          ^
+main.c(502): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIMER0->TCSR &= ~(0b11 << 27);
+                     ~~ ^~~~~~~~~~~~~
+main.c(503): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        TIMER0->TCSR |= (0b01 << 27);
+                         ^
+main.c(504): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIMER0->TCSR &= ~(1 << 24);
+                     ~~ ^~~~~~~~~~
+main.c(512): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIMER0->TCSR &= ~(1 << 24);
+                     ~~ ^~~~~~~~~~
+main.c(518): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        NVIC->IP[2] &= (~(3 << 6));
+                    ~~  ^~~~~~~~~
+main.c(599): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIMER0->TCSR &= ~(1 << 30);
+                     ~~ ^~~~~~~~~~
+main.c(611): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        CLK->CLKSEL1 &= ~(0b111 << 8);
+                          ^
+main.c(611): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        CLK->CLKSEL1 &= ~(0b111 << 8);
+                     ~~ ^~~~~~~~~~~~~
+main.c(612): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        CLK->CLKSEL1 |= (0b001 << 8); // Clock is 32.768Khz
+                         ^
+main.c(614): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIMER1->TCSR &= ~(0xFF << 0);
+                     ~~ ^~~~~~~~~~~~
+main.c(620): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        TIMER1->TCSR &= ~(0b11 << 27);
+                          ^
+main.c(620): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIMER1->TCSR &= ~(0b11 << 27);
+                     ~~ ^~~~~~~~~~~~~
+main.c(621): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        TIMER1->TCSR |= (0b01 << 27);
+                         ^
+main.c(622): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIMER1->TCSR &= ~(1 << 24);
+                     ~~ ^~~~~~~~~~
+main.c(630): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        NVIC->IP[2] &= (~(3 << 14));
+                    ~~  ^~~~~~~~~~
+main.c(109): warning: no previous extern declaration for non-static variable 'program_state' [-Wmissing-variable-declarations]
+STATES program_state;
+       ^
+main.c(109): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+STATES program_state;
+^
+111 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=2612 RO-data=224 RW-data=44 ZI-data=1224  
+".\Objects\Assignment3_Exe3.axf" - 0 Error(s), 111 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Nuvoton
+                https://github.com/OpenNuvoton/cmsis-packs/raw/master/Nuvoton_DFP/Nuvoton.NuMicro_DFP.1.3.16.pack
+                Nuvoton.NuMicro_DFP.1.3.16
+                Nuvoton ARM Cortex-M NuMicro Family Device Support
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\Packs\Nuvoton\NuMicro_DFP\1.3.16\Device\NUC100\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
