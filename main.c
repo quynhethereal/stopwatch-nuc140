@@ -508,8 +508,6 @@ void TMR0_Init(void)
 
 	// enable Timer 0 interrupt
 	TIMER0->TCSR |= (1 << 29);
-	// enable read from TDR
-	TIMER0->TCSR &= ~(1 << 24);
 
 	// 0.1 seconds
 	TIMER0->TCMPR = 3276 - 1;
@@ -536,7 +534,7 @@ void Start_Stopwatch(void)
 void Count_Stopwatch(void)
 {
 
-	// read data from TDR to know the current value of the timer
+	// increase count by 1
 	millisecond_count = millisecond_count + 1;
 
 	// display fourth digit as 0.1 seconds
@@ -700,8 +698,7 @@ void Handle_Rotate_Button_Press(void)
 		lap_number_to_display = 0;
 	}
 
-		lap_number_to_display = lap_number_to_display + 1;
-
+	lap_number_to_display = lap_number_to_display + 1;
 
 	if (program_state == PAUSE_MODE)
 	{
