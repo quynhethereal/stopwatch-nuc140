@@ -47,7 +47,7 @@ void Rotate_Button_Init(void);
 void Reset_Timer0(void);
 void DisplayCheckMode(void);
 void Handle_Rotate_Button_Press(void);
-void RecordLap(void);
+void Record_Lap(void);
 
 // stopwatch related
 void Start_Stopwatch(void);
@@ -431,7 +431,7 @@ void Hanlde_Keypad_Button_Press(void)
 			lap_number = 0;
 		}
 		lap_number = lap_number + 1;
-		RecordLap();
+		Record_Lap();
 	}
 	// pause -> idle state: LED 7 off, LED 5 on
 	else if (is_K9_Pressed == true && program_state == PAUSE_MODE)
@@ -747,7 +747,7 @@ void DisplayCheckMode(void)
 	Display_Digit(4, Lap_Record_List[lap_number_to_display - 1].millisecond_digit);
 }
 
-void RecordLap(void)
+void Record_Lap(void)
 {
 	Lap_Record_List[lap_number - 1].first_digit_of_second = second_digit;
 	Lap_Record_List[lap_number - 1].second_digit_of_second = third_digit;
