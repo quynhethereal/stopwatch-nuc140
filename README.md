@@ -1,4 +1,4 @@
-# Embedded Design 2 EEET2481
+# Embedded Design 2 - EEET2481
 An embedded stopwatch implementation running on NUC140 board. 
 
 # Functional Requirements
@@ -25,8 +25,6 @@ The behavior of this stopwatch is:
 ## State machine diagram 
 
 <img width="1160" alt="image" src="https://github.com/quynhethereal/stopwatch-nuc140/assets/49337640/21d0f013-73e3-4af0-9679-4f644f8b0fad">
-
-
 
 # Demo
 
