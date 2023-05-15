@@ -161,7 +161,6 @@ int main(void)
 		case PAUSE_MODE:
 			Display_Stopwatch();
 			break;
-
 		case CHECK_MODE:
 			Turn_Off_All_Digits();
 			DisplayCheckMode();
@@ -445,7 +444,8 @@ void Handle_Keypad_Button_Press(void)
 		program_state = IDLE_MODE;
 	}
 	// check -> pause mode
-	else if(is_K9_Pressed == true && program_state == CHECK_MODE){
+	else if (is_K9_Pressed == true && program_state == CHECK_MODE)
+	{
 		program_state = PAUSE_MODE;
 	}
 }
