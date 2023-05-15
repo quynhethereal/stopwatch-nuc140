@@ -22,7 +22,7 @@ Dialog DLL:      TARMCM1.DLL V1.14.2.0
  
 <h2>Project:</h2>
 C:\Users\T470S\Downloads\Assignment3_Exe3\Assignment3_Exe3.uvprojx
-Project File Date:  05/14/2023
+Project File Date:  05/15/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.14', folder: 'D:\Keil\ARM\ARMCLANG\Bin'
@@ -298,128 +298,125 @@ main.c(256): warning: implicit conversion changes signedness: 'int' to 'unsigned
 main.c(257): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
         PC->PMD |= 0b01 << 26;
                    ^
-main.c(264): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(265): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         GPIO->DBNCECON &= ~(0xF << 0);
                        ~~ ^~~~~~~~~~~
-main.c(272): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+main.c(273): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
         PB->PMD &= ~(0b11 << 30);
                      ^
-main.c(272): warning: signed shift result (0xC0000000) sets the sign bit of the shift expression's type ('int') and becomes negative [-Wshift-sign-overflow]
+main.c(273): warning: signed shift result (0xC0000000) sets the sign bit of the shift expression's type ('int') and becomes negative [-Wshift-sign-overflow]
         PB->PMD &= ~(0b11 << 30);
                      ~~~~ ^  ~~
-main.c(312): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-                PC->DOUT &= ~(1 << 6); // SC3
-                         ~~ ^~~~~~~~~
 main.c(313): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-                PC->DOUT &= ~(1 << 5); // SC2
+                PC->DOUT &= ~(1 << 6); // SC3
                          ~~ ^~~~~~~~~
 main.c(314): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-                PC->DOUT &= ~(1 << 4); // SC1
-                         ~~ ^~~~~~~~~
-main.c(315): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
-                PE->DOUT = pattern[number_to_display];
-                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
-main.c(324): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
-                PE->DOUT = pattern[number_to_display];
-                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
-main.c(333): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
-                PE->DOUT = pattern[number_to_display];
-                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
-main.c(339): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-                PC->DOUT &= ~(1 << 6); // SC3
-                         ~~ ^~~~~~~~~
-main.c(340): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
                 PC->DOUT &= ~(1 << 5); // SC2
                          ~~ ^~~~~~~~~
-main.c(341): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-                PC->DOUT &= ~(1 << 7); // SC1
+main.c(315): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                PC->DOUT &= ~(1 << 4); // SC1
                          ~~ ^~~~~~~~~
-main.c(342): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+main.c(316): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
                 PE->DOUT = pattern[number_to_display];
                          ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
-main.c(359): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(325): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                PE->DOUT = pattern[number_to_display];
+                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(334): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                PE->DOUT = pattern[number_to_display];
+                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(340): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                PC->DOUT &= ~(1 << 6); // SC3
+                         ~~ ^~~~~~~~~
+main.c(341): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                PC->DOUT &= ~(1 << 5); // SC2
+                         ~~ ^~~~~~~~~
+main.c(342): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                PC->DOUT &= ~(1 << 7); // SC1
+                         ~~ ^~~~~~~~~
+main.c(343): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                PE->DOUT = pattern[number_to_display];
+                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(360): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         PC->DOUT &= ~(1 << 7);
                  ~~ ^~~~~~~~~
-main.c(360): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(361): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         PC->DOUT &= ~(1 << 6); // SC3
                  ~~ ^~~~~~~~~
-main.c(361): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(362): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         PC->DOUT &= ~(1 << 5); // SC2
                  ~~ ^~~~~~~~~
-main.c(362): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(363): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         PC->DOUT &= ~(1 << 4); // SC1
                  ~~ ^~~~~~~~~
-main.c(379): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(380): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         PA->DOUT &= ~(1 << 3);
                  ~~ ^~~~~~~~~
-main.c(396): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(397): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         PA->DOUT &= ~(1 << 5);
                  ~~ ^~~~~~~~~
-main.c(406): warning: no previous prototype for function 'Hanlde_Keypad_Button_Press' [-Wmissing-prototypes]
-void Hanlde_Keypad_Button_Press(void)
+main.c(407): warning: no previous prototype for function 'Handle_Keypad_Button_Press' [-Wmissing-prototypes]
+void Handle_Keypad_Button_Press(void)
      ^
-main.c(406): note: declare 'static' if the function is not intended to be used outside of this translation unit
-void Hanlde_Keypad_Button_Press(void)
+main.c(407): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Handle_Keypad_Button_Press(void)
 ^
 static 
-main.c(495): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+main.c(500): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
         CLK->CLKSEL1 &= ~(0b111 << 8);
                           ^
-main.c(495): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(500): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         CLK->CLKSEL1 &= ~(0b111 << 8);
                      ~~ ^~~~~~~~~~~~~
-main.c(496): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+main.c(501): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
         CLK->CLKSEL1 |= (0b001 << 8); // Clock is 32.768Khz
                          ^
-main.c(498): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(503): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         TIMER0->TCSR &= ~(0xFF << 0);
                      ~~ ^~~~~~~~~~~~
-main.c(502): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+main.c(507): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
         TIMER0->TCSR &= ~(0b11 << 27);
                           ^
-main.c(502): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(507): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         TIMER0->TCSR &= ~(0b11 << 27);
                      ~~ ^~~~~~~~~~~~~
-main.c(503): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+main.c(508): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
         TIMER0->TCSR |= (0b01 << 27);
                          ^
-main.c(504): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(509): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         TIMER0->TCSR &= ~(1 << 24);
                      ~~ ^~~~~~~~~~
-main.c(512): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        TIMER0->TCSR &= ~(1 << 24);
-                     ~~ ^~~~~~~~~~
-main.c(518): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(521): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         NVIC->IP[2] &= (~(3 << 6));
                     ~~  ^~~~~~~~~
-main.c(599): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(602): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         TIMER0->TCSR &= ~(1 << 30);
                      ~~ ^~~~~~~~~~
-main.c(611): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+main.c(614): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
         CLK->CLKSEL1 &= ~(0b111 << 8);
                           ^
-main.c(611): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(614): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         CLK->CLKSEL1 &= ~(0b111 << 8);
                      ~~ ^~~~~~~~~~~~~
-main.c(612): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+main.c(615): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
         CLK->CLKSEL1 |= (0b001 << 8); // Clock is 32.768Khz
                          ^
-main.c(614): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(617): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         TIMER1->TCSR &= ~(0xFF << 0);
                      ~~ ^~~~~~~~~~~~
-main.c(620): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+main.c(623): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
         TIMER1->TCSR &= ~(0b11 << 27);
                           ^
-main.c(620): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(623): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         TIMER1->TCSR &= ~(0b11 << 27);
                      ~~ ^~~~~~~~~~~~~
-main.c(621): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+main.c(624): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
         TIMER1->TCSR |= (0b01 << 27);
                          ^
-main.c(622): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(625): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         TIMER1->TCSR &= ~(1 << 24);
                      ~~ ^~~~~~~~~~
-main.c(630): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(633): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         NVIC->IP[2] &= (~(3 << 14));
                     ~~  ^~~~~~~~~~
 main.c(109): warning: no previous extern declaration for non-static variable 'program_state' [-Wmissing-variable-declarations]
@@ -428,11 +425,11 @@ STATES program_state;
 main.c(109): note: declare 'static' if the variable is not intended to be used outside of this translation unit
 STATES program_state;
 ^
-111 warnings generated.
+110 warnings generated.
 compiling main.c...
 linking...
 Program Size: Code=2612 RO-data=224 RW-data=44 ZI-data=1224  
-".\Objects\Assignment3_Exe3.axf" - 0 Error(s), 111 Warning(s).
+".\Objects\Assignment3_Exe3.axf" - 0 Error(s), 110 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -446,7 +443,7 @@ Package Vendor: Nuvoton
   D:\Packs\Nuvoton\NuMicro_DFP\1.3.16\Device\NUC100\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

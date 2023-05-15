@@ -62,20 +62,20 @@ Section Cross References
     main.o(.ARM.exidx.text.Delay) refers to main.o(.text.Delay) for [Anonymous Symbol]
     main.o(.ARM.exidx.text.Check_If_K1_Is_Pressed) refers to main.o(.text.Check_If_K1_Is_Pressed) for [Anonymous Symbol]
     main.o(.ARM.exidx.text.Check_If_K9_Is_Pressed) refers to main.o(.text.Check_If_K9_Is_Pressed) for [Anonymous Symbol]
-    main.o(.text.Hanlde_Keypad_Button_Press) refers to main.o(.text.RecordLap) for RecordLap
-    main.o(.text.Hanlde_Keypad_Button_Press) refers to main.o(.text.Reset_Stopwatch) for Reset_Stopwatch
-    main.o(.text.Hanlde_Keypad_Button_Press) refers to main.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
-    main.o(.ARM.exidx.text.Hanlde_Keypad_Button_Press) refers to main.o(.text.Hanlde_Keypad_Button_Press) for [Anonymous Symbol]
+    main.o(.text.Handle_Keypad_Button_Press) refers to main.o(.text.Record_Lap) for Record_Lap
+    main.o(.text.Handle_Keypad_Button_Press) refers to main.o(.text.Reset_Stopwatch) for Reset_Stopwatch
+    main.o(.text.Handle_Keypad_Button_Press) refers to main.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    main.o(.ARM.exidx.text.Handle_Keypad_Button_Press) refers to main.o(.text.Handle_Keypad_Button_Press) for [Anonymous Symbol]
     main.o(.ARM.exidx.text.Start_Stopwatch) refers to main.o(.text.Start_Stopwatch) for [Anonymous Symbol]
     main.o(.ARM.exidx.text.Pause_Stopwatch) refers to main.o(.text.Pause_Stopwatch) for [Anonymous Symbol]
-    main.o(.text.RecordLap) refers to main.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
-    main.o(.ARM.exidx.text.RecordLap) refers to main.o(.text.RecordLap) for [Anonymous Symbol]
+    main.o(.text.Record_Lap) refers to main.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
+    main.o(.ARM.exidx.text.Record_Lap) refers to main.o(.text.Record_Lap) for [Anonymous Symbol]
     main.o(.ARM.exidx.text.Reset_Timer0) refers to main.o(.text.Reset_Timer0) for [Anonymous Symbol]
     main.o(.text.Reset_Stopwatch) refers to main.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
     main.o(.ARM.exidx.text.Reset_Stopwatch) refers to main.o(.text.Reset_Stopwatch) for [Anonymous Symbol]
     main.o(.text.GPAB_IRQHandler) refers to main.o(.text.Check_If_K1_Is_Pressed) for Check_If_K1_Is_Pressed
     main.o(.text.GPAB_IRQHandler) refers to main.o(.text.Check_If_K9_Is_Pressed) for Check_If_K9_Is_Pressed
-    main.o(.text.GPAB_IRQHandler) refers to main.o(.text.Hanlde_Keypad_Button_Press) for Hanlde_Keypad_Button_Press
+    main.o(.text.GPAB_IRQHandler) refers to main.o(.text.Handle_Keypad_Button_Press) for Handle_Keypad_Button_Press
     main.o(.text.GPAB_IRQHandler) refers to main.o(.text.Delay) for Delay
     main.o(.text.GPAB_IRQHandler) refers to main.o(.bss..L_MergedGlobals) for [Anonymous Symbol]
     main.o(.ARM.exidx.text.GPAB_IRQHandler) refers to main.o(.text.GPAB_IRQHandler) for [Anonymous Symbol]
@@ -248,12 +248,12 @@ Removing Unused input sections from the image.
     Removing main.o(.ARM.exidx.text.Delay), (8 bytes).
     Removing main.o(.ARM.exidx.text.Check_If_K1_Is_Pressed), (8 bytes).
     Removing main.o(.ARM.exidx.text.Check_If_K9_Is_Pressed), (8 bytes).
-    Removing main.o(.ARM.exidx.text.Hanlde_Keypad_Button_Press), (8 bytes).
+    Removing main.o(.ARM.exidx.text.Handle_Keypad_Button_Press), (8 bytes).
     Removing main.o(.text.Start_Stopwatch), (20 bytes).
     Removing main.o(.ARM.exidx.text.Start_Stopwatch), (8 bytes).
     Removing main.o(.text.Pause_Stopwatch), (20 bytes).
     Removing main.o(.ARM.exidx.text.Pause_Stopwatch), (8 bytes).
-    Removing main.o(.ARM.exidx.text.RecordLap), (8 bytes).
+    Removing main.o(.ARM.exidx.text.Record_Lap), (8 bytes).
     Removing main.o(.text.Reset_Timer0), (20 bytes).
     Removing main.o(.ARM.exidx.text.Reset_Timer0), (8 bytes).
     Removing main.o(.ARM.exidx.text.Reset_Stopwatch), (8 bytes).
@@ -427,36 +427,35 @@ Image Symbol Table
     __arm_cp.27_1                            0x0000059c   Number         4  main.o(.text.GPAB_IRQHandler)
     __arm_cp.27_2                            0x000005a0   Number         4  main.o(.text.GPAB_IRQHandler)
     __arm_cp.27_3                            0x000005a4   Number         4  main.o(.text.GPAB_IRQHandler)
-    [Anonymous Symbol]                       0x000005a8   Section        0  main.o(.text.Handle_Rotate_Button_Press)
-    __arm_cp.38_1                            0x000005d0   Number         4  main.o(.text.Handle_Rotate_Button_Press)
-    [Anonymous Symbol]                       0x000005d4   Section        0  main.o(.text.Hanlde_Keypad_Button_Press)
-    [Anonymous Symbol]                       0x00000684   Section        0  main.o(.text.Keypad_Init)
-    __arm_cp.3_0                             0x000006f0   Number         4  main.o(.text.Keypad_Init)
-    __arm_cp.3_2                             0x000006f4   Number         4  main.o(.text.Keypad_Init)
-    [Anonymous Symbol]                       0x000006f8   Section        0  main.o(.text.LED_Init)
-    [Anonymous Symbol]                       0x00000734   Section        0  main.o(.text.RecordLap)
-    [Anonymous Symbol]                       0x00000764   Section        0  main.o(.text.Reset_Stopwatch)
-    __arm_cp.26_0                            0x00000778   Number         4  main.o(.text.Reset_Stopwatch)
-    [Anonymous Symbol]                       0x0000077c   Section        0  main.o(.text.Rotate_Button_Init)
-    __arm_cp.6_0                             0x000007c0   Number         4  main.o(.text.Rotate_Button_Init)
-    __arm_cp.6_1                             0x000007c4   Number         4  main.o(.text.Rotate_Button_Init)
-    __arm_cp.6_3                             0x000007c8   Number         4  main.o(.text.Rotate_Button_Init)
-    __arm_cp.6_4                             0x000007cc   Number         4  main.o(.text.Rotate_Button_Init)
-    [Anonymous Symbol]                       0x000007d0   Section        0  main.o(.text.Select_Digit)
-    __arm_cp.16_0                            0x0000083c   Number         4  main.o(.text.Select_Digit)
-    __arm_cp.16_1                            0x00000840   Number         4  main.o(.text.Select_Digit)
-    __arm_cp.16_2                            0x00000844   Number         4  main.o(.text.Select_Digit)
-    [Anonymous Symbol]                       0x00000848   Section        0  main.o(.text.Seven_Seg_Init)
-    __arm_cp.5_0                             0x00000874   Number         4  main.o(.text.Seven_Seg_Init)
-    __arm_cp.5_1                             0x00000878   Number         4  main.o(.text.Seven_Seg_Init)
-    __arm_cp.5_2                             0x0000087c   Number         4  main.o(.text.Seven_Seg_Init)
-    [Anonymous Symbol]                       0x00000880   Section        0  system_nuc100series.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x00000884   Section        0  main.o(.text.TMR0_IRQHandler)
-    __arm_cp.32_0                            0x00000898   Number         4  main.o(.text.TMR0_IRQHandler)
-    [Anonymous Symbol]                       0x0000089c   Section        0  main.o(.text.TMR0_Init)
-    __arm_cp.7_1                             0x00000918   Number         4  main.o(.text.TMR0_Init)
-    __arm_cp.7_2                             0x0000091c   Number         4  main.o(.text.TMR0_Init)
-    __arm_cp.7_3                             0x00000920   Number         4  main.o(.text.TMR0_Init)
+    [Anonymous Symbol]                       0x000005a8   Section        0  main.o(.text.Handle_Keypad_Button_Press)
+    [Anonymous Symbol]                       0x00000664   Section        0  main.o(.text.Handle_Rotate_Button_Press)
+    __arm_cp.38_1                            0x0000068c   Number         4  main.o(.text.Handle_Rotate_Button_Press)
+    [Anonymous Symbol]                       0x00000690   Section        0  main.o(.text.Keypad_Init)
+    __arm_cp.3_0                             0x000006fc   Number         4  main.o(.text.Keypad_Init)
+    __arm_cp.3_2                             0x00000700   Number         4  main.o(.text.Keypad_Init)
+    [Anonymous Symbol]                       0x00000704   Section        0  main.o(.text.LED_Init)
+    [Anonymous Symbol]                       0x00000740   Section        0  main.o(.text.Record_Lap)
+    [Anonymous Symbol]                       0x00000770   Section        0  main.o(.text.Reset_Stopwatch)
+    __arm_cp.26_0                            0x00000784   Number         4  main.o(.text.Reset_Stopwatch)
+    [Anonymous Symbol]                       0x00000788   Section        0  main.o(.text.Rotate_Button_Init)
+    __arm_cp.6_0                             0x000007cc   Number         4  main.o(.text.Rotate_Button_Init)
+    __arm_cp.6_1                             0x000007d0   Number         4  main.o(.text.Rotate_Button_Init)
+    __arm_cp.6_3                             0x000007d4   Number         4  main.o(.text.Rotate_Button_Init)
+    __arm_cp.6_4                             0x000007d8   Number         4  main.o(.text.Rotate_Button_Init)
+    [Anonymous Symbol]                       0x000007dc   Section        0  main.o(.text.Select_Digit)
+    __arm_cp.16_0                            0x00000848   Number         4  main.o(.text.Select_Digit)
+    __arm_cp.16_1                            0x0000084c   Number         4  main.o(.text.Select_Digit)
+    __arm_cp.16_2                            0x00000850   Number         4  main.o(.text.Select_Digit)
+    [Anonymous Symbol]                       0x00000854   Section        0  main.o(.text.Seven_Seg_Init)
+    __arm_cp.5_0                             0x00000880   Number         4  main.o(.text.Seven_Seg_Init)
+    __arm_cp.5_1                             0x00000884   Number         4  main.o(.text.Seven_Seg_Init)
+    __arm_cp.5_2                             0x00000888   Number         4  main.o(.text.Seven_Seg_Init)
+    [Anonymous Symbol]                       0x0000088c   Section        0  system_nuc100series.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x00000890   Section        0  main.o(.text.TMR0_IRQHandler)
+    __arm_cp.32_0                            0x000008a4   Number         4  main.o(.text.TMR0_IRQHandler)
+    [Anonymous Symbol]                       0x000008a8   Section        0  main.o(.text.TMR0_Init)
+    __arm_cp.7_1                             0x0000091c   Number         4  main.o(.text.TMR0_Init)
+    __arm_cp.7_2                             0x00000920   Number         4  main.o(.text.TMR0_Init)
     [Anonymous Symbol]                       0x00000924   Section        0  main.o(.text.TMR1_IRQHandler)
     __arm_cp.35_0                            0x00000984   Number         4  main.o(.text.TMR1_IRQHandler)
     __arm_cp.35_2                            0x00000994   Number         4  main.o(.text.TMR1_IRQHandler)
@@ -633,18 +632,18 @@ Image Symbol Table
     EINT1_IRQHandler                         0x00000511   Thumb Code    32  main.o(.text.EINT1_IRQHandler)
     Enable_Clocksources                      0x00000531   Thumb Code    64  main.o(.text.Enable_Clocksources)
     GPAB_IRQHandler                          0x00000571   Thumb Code    56  main.o(.text.GPAB_IRQHandler)
-    Handle_Rotate_Button_Press               0x000005a9   Thumb Code    44  main.o(.text.Handle_Rotate_Button_Press)
-    Hanlde_Keypad_Button_Press               0x000005d5   Thumb Code   176  main.o(.text.Hanlde_Keypad_Button_Press)
-    Keypad_Init                              0x00000685   Thumb Code   116  main.o(.text.Keypad_Init)
-    LED_Init                                 0x000006f9   Thumb Code    60  main.o(.text.LED_Init)
-    RecordLap                                0x00000735   Thumb Code    48  main.o(.text.RecordLap)
-    Reset_Stopwatch                          0x00000765   Thumb Code    24  main.o(.text.Reset_Stopwatch)
-    Rotate_Button_Init                       0x0000077d   Thumb Code    84  main.o(.text.Rotate_Button_Init)
-    Select_Digit                             0x000007d1   Thumb Code   120  main.o(.text.Select_Digit)
-    Seven_Seg_Init                           0x00000849   Thumb Code    56  main.o(.text.Seven_Seg_Init)
-    SystemInit                               0x00000881   Thumb Code     2  system_nuc100series.o(.text.SystemInit)
-    TMR0_IRQHandler                          0x00000885   Thumb Code    24  main.o(.text.TMR0_IRQHandler)
-    TMR0_Init                                0x0000089d   Thumb Code   136  main.o(.text.TMR0_Init)
+    Handle_Keypad_Button_Press               0x000005a9   Thumb Code   188  main.o(.text.Handle_Keypad_Button_Press)
+    Handle_Rotate_Button_Press               0x00000665   Thumb Code    44  main.o(.text.Handle_Rotate_Button_Press)
+    Keypad_Init                              0x00000691   Thumb Code   116  main.o(.text.Keypad_Init)
+    LED_Init                                 0x00000705   Thumb Code    60  main.o(.text.LED_Init)
+    Record_Lap                               0x00000741   Thumb Code    48  main.o(.text.Record_Lap)
+    Reset_Stopwatch                          0x00000771   Thumb Code    24  main.o(.text.Reset_Stopwatch)
+    Rotate_Button_Init                       0x00000789   Thumb Code    84  main.o(.text.Rotate_Button_Init)
+    Select_Digit                             0x000007dd   Thumb Code   120  main.o(.text.Select_Digit)
+    Seven_Seg_Init                           0x00000855   Thumb Code    56  main.o(.text.Seven_Seg_Init)
+    SystemInit                               0x0000088d   Thumb Code     2  system_nuc100series.o(.text.SystemInit)
+    TMR0_IRQHandler                          0x00000891   Thumb Code    24  main.o(.text.TMR0_IRQHandler)
+    TMR0_Init                                0x000008a9   Thumb Code   124  main.o(.text.TMR0_Init)
     TMR1_IRQHandler                          0x00000925   Thumb Code   144  main.o(.text.TMR1_IRQHandler)
     TMR1_Init                                0x000009b5   Thumb Code   140  main.o(.text.TMR1_Init)
     Turn_Off_All_Digits                      0x00000a41   Thumb Code    36  main.o(.text.Turn_Off_All_Digits)
@@ -741,19 +740,19 @@ Memory Map of the image
     0x00000510   0x00000510   0x00000020   Code   RO          102    .text.EINT1_IRQHandler  main.o
     0x00000530   0x00000530   0x00000040   Code   RO           26    .text.Enable_Clocksources  main.o
     0x00000570   0x00000570   0x00000038   Code   RO           78    .text.GPAB_IRQHandler  main.o
-    0x000005a8   0x000005a8   0x0000002c   Code   RO          100    .text.Handle_Rotate_Button_Press  main.o
-    0x000005d4   0x000005d4   0x000000b0   Code   RO           66    .text.Hanlde_Keypad_Button_Press  main.o
-    0x00000684   0x00000684   0x00000074   Code   RO           30    .text.Keypad_Init   main.o
-    0x000006f8   0x000006f8   0x0000003c   Code   RO           32    .text.LED_Init      main.o
-    0x00000734   0x00000734   0x00000030   Code   RO           72    .text.RecordLap     main.o
-    0x00000764   0x00000764   0x00000018   Code   RO           76    .text.Reset_Stopwatch  main.o
-    0x0000077c   0x0000077c   0x00000054   Code   RO           36    .text.Rotate_Button_Init  main.o
-    0x000007d0   0x000007d0   0x00000078   Code   RO           56    .text.Select_Digit  main.o
-    0x00000848   0x00000848   0x00000038   Code   RO           34    .text.Seven_Seg_Init  main.o
-    0x00000880   0x00000880   0x00000002   Code   RO            4    .text.SystemInit    system_nuc100series.o
-    0x00000882   0x00000882   0x00000002   PAD
-    0x00000884   0x00000884   0x00000018   Code   RO           88    .text.TMR0_IRQHandler  main.o
-    0x0000089c   0x0000089c   0x00000088   Code   RO           38    .text.TMR0_Init     main.o
+    0x000005a8   0x000005a8   0x000000bc   Code   RO           66    .text.Handle_Keypad_Button_Press  main.o
+    0x00000664   0x00000664   0x0000002c   Code   RO          100    .text.Handle_Rotate_Button_Press  main.o
+    0x00000690   0x00000690   0x00000074   Code   RO           30    .text.Keypad_Init   main.o
+    0x00000704   0x00000704   0x0000003c   Code   RO           32    .text.LED_Init      main.o
+    0x00000740   0x00000740   0x00000030   Code   RO           72    .text.Record_Lap    main.o
+    0x00000770   0x00000770   0x00000018   Code   RO           76    .text.Reset_Stopwatch  main.o
+    0x00000788   0x00000788   0x00000054   Code   RO           36    .text.Rotate_Button_Init  main.o
+    0x000007dc   0x000007dc   0x00000078   Code   RO           56    .text.Select_Digit  main.o
+    0x00000854   0x00000854   0x00000038   Code   RO           34    .text.Seven_Seg_Init  main.o
+    0x0000088c   0x0000088c   0x00000002   Code   RO            4    .text.SystemInit    system_nuc100series.o
+    0x0000088e   0x0000088e   0x00000002   PAD
+    0x00000890   0x00000890   0x00000018   Code   RO           88    .text.TMR0_IRQHandler  main.o
+    0x000008a8   0x000008a8   0x0000007c   Code   RO           38    .text.TMR0_Init     main.o
     0x00000924   0x00000924   0x00000090   Code   RO           94    .text.TMR1_IRQHandler  main.o
     0x000009b4   0x000009b4   0x0000008c   Code   RO           40    .text.TMR1_Init     main.o
     0x00000a40   0x00000a40   0x00000024   Code   RO           46    .text.Turn_Off_All_Digits  main.o
@@ -785,12 +784,12 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      1872        200          0         44        104       8900   main.o
+      1872        196          0         44        104       8900   main.o
        100         46        192          0       1024        680   startup_nuc100series.o
          2          0          0          0          0       2166   system_nuc100series.o
 
     ----------------------------------------------------------------------
-      1976        246        224         44       1128      11746   Object Totals
+      1976        242        224         44       1128      11746   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          2          0          0          0          0          0   (incl. Padding)
 
@@ -840,9 +839,9 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      2612        266        224         44       1224      12226   Grand Totals
-      2612        266        224         44       1224      12226   ELF Image Totals
-      2612        266        224         44          0          0   ROM Totals
+      2612        262        224         44       1224      12226   Grand Totals
+      2612        262        224         44       1224      12226   ELF Image Totals
+      2612        262        224         44          0          0   ROM Totals
 
 ==============================================================================
 

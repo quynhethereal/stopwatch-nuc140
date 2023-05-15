@@ -257,6 +257,7 @@ void LED_Init(void)
 	PC->PMD |= 0b01 << 26;
 }
 
+// this doesn't work
 void Debounce_Keypad(void)
 {
 	PA->DBEN |= (1UL << 0) | (1UL << 1) | (1UL << 2);
@@ -403,7 +404,7 @@ bool Check_If_K9_Is_Pressed(void)
 }
 
 // handle keypad button press
-void Hanlde_Keypad_Button_Press(void)
+void Handle_Keypad_Button_Press(void)
 {
 
 	// idle -> count state: LED 5 off, LED6 on
@@ -443,6 +444,10 @@ void Hanlde_Keypad_Button_Press(void)
 		Reset_Stopwatch();
 		program_state = IDLE_MODE;
 	}
+	// check -> pause mode
+	else if(is_K9_Pressed == true && program_state == CHECK_MODE){
+		program_state = PAUSE_MODE;
+	}
 }
 
 void GPAB_IRQHandler(void)
@@ -451,7 +456,7 @@ void GPAB_IRQHandler(void)
 	is_K1_Pressed = Check_If_K1_Is_Pressed();
 	is_K9_Pressed = Check_If_K9_Is_Pressed();
 
-	Hanlde_Keypad_Button_Press();
+	Handle_Keypad_Button_Press();
 
 	Delay(1000000);
 
@@ -708,6 +713,7 @@ void Handle_Rotate_Button_Press(void)
 
 	Delay(100000); // debounce
 }
+
 void EINT1_IRQHandler(void)
 {
 
