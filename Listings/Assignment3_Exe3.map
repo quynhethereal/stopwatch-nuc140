@@ -434,44 +434,44 @@ Image Symbol Table
     __arm_cp.3_0                             0x000006fc   Number         4  main.o(.text.Keypad_Init)
     __arm_cp.3_2                             0x00000700   Number         4  main.o(.text.Keypad_Init)
     [Anonymous Symbol]                       0x00000704   Section        0  main.o(.text.LED_Init)
-    [Anonymous Symbol]                       0x00000740   Section        0  main.o(.text.Record_Lap)
-    [Anonymous Symbol]                       0x00000770   Section        0  main.o(.text.Reset_Stopwatch)
-    __arm_cp.26_0                            0x00000784   Number         4  main.o(.text.Reset_Stopwatch)
-    [Anonymous Symbol]                       0x00000788   Section        0  main.o(.text.Rotate_Button_Init)
-    __arm_cp.6_0                             0x000007cc   Number         4  main.o(.text.Rotate_Button_Init)
-    __arm_cp.6_1                             0x000007d0   Number         4  main.o(.text.Rotate_Button_Init)
-    __arm_cp.6_3                             0x000007d4   Number         4  main.o(.text.Rotate_Button_Init)
-    __arm_cp.6_4                             0x000007d8   Number         4  main.o(.text.Rotate_Button_Init)
-    [Anonymous Symbol]                       0x000007dc   Section        0  main.o(.text.Select_Digit)
-    __arm_cp.16_0                            0x00000848   Number         4  main.o(.text.Select_Digit)
-    __arm_cp.16_1                            0x0000084c   Number         4  main.o(.text.Select_Digit)
-    __arm_cp.16_2                            0x00000850   Number         4  main.o(.text.Select_Digit)
-    [Anonymous Symbol]                       0x00000854   Section        0  main.o(.text.Seven_Seg_Init)
-    __arm_cp.5_0                             0x00000880   Number         4  main.o(.text.Seven_Seg_Init)
-    __arm_cp.5_1                             0x00000884   Number         4  main.o(.text.Seven_Seg_Init)
-    __arm_cp.5_2                             0x00000888   Number         4  main.o(.text.Seven_Seg_Init)
-    [Anonymous Symbol]                       0x0000088c   Section        0  system_nuc100series.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x00000890   Section        0  main.o(.text.TMR0_IRQHandler)
-    __arm_cp.32_0                            0x000008a4   Number         4  main.o(.text.TMR0_IRQHandler)
-    [Anonymous Symbol]                       0x000008a8   Section        0  main.o(.text.TMR0_Init)
-    __arm_cp.7_1                             0x0000091c   Number         4  main.o(.text.TMR0_Init)
-    __arm_cp.7_2                             0x00000920   Number         4  main.o(.text.TMR0_Init)
-    [Anonymous Symbol]                       0x00000924   Section        0  main.o(.text.TMR1_IRQHandler)
-    __arm_cp.35_0                            0x00000984   Number         4  main.o(.text.TMR1_IRQHandler)
-    __arm_cp.35_2                            0x00000994   Number         4  main.o(.text.TMR1_IRQHandler)
-    __arm_cp.35_5                            0x000009b0   Number         4  main.o(.text.TMR1_IRQHandler)
-    [Anonymous Symbol]                       0x000009b4   Section        0  main.o(.text.TMR1_Init)
-    __arm_cp.8_0                             0x00000a2c   Number         4  main.o(.text.TMR1_Init)
-    __arm_cp.8_1                             0x00000a30   Number         4  main.o(.text.TMR1_Init)
-    __arm_cp.8_2                             0x00000a34   Number         4  main.o(.text.TMR1_Init)
-    __arm_cp.8_3                             0x00000a38   Number         4  main.o(.text.TMR1_Init)
-    __arm_cp.8_4                             0x00000a3c   Number         4  main.o(.text.TMR1_Init)
-    [Anonymous Symbol]                       0x00000a40   Section        0  main.o(.text.Turn_Off_All_Digits)
-    [Anonymous Symbol]                       0x00000a64   Section        0  main.o(.text.main)
-    __arm_cp.0_0                             0x00000ae4   Number         4  main.o(.text.main)
-    __arm_cp.0_1                             0x00000ae8   Number         4  main.o(.text.main)
-    __arm_cp.0_2                             0x00000aec   Number         4  main.o(.text.main)
-    __arm_cp.0_3                             0x00000af0   Number         4  main.o(.text.main)
+    [Anonymous Symbol]                       0x00000750   Section        0  main.o(.text.Record_Lap)
+    [Anonymous Symbol]                       0x00000780   Section        0  main.o(.text.Reset_Stopwatch)
+    __arm_cp.26_0                            0x00000794   Number         4  main.o(.text.Reset_Stopwatch)
+    [Anonymous Symbol]                       0x00000798   Section        0  main.o(.text.Rotate_Button_Init)
+    __arm_cp.6_0                             0x000007dc   Number         4  main.o(.text.Rotate_Button_Init)
+    __arm_cp.6_1                             0x000007e0   Number         4  main.o(.text.Rotate_Button_Init)
+    __arm_cp.6_3                             0x000007e4   Number         4  main.o(.text.Rotate_Button_Init)
+    __arm_cp.6_4                             0x000007e8   Number         4  main.o(.text.Rotate_Button_Init)
+    [Anonymous Symbol]                       0x000007ec   Section        0  main.o(.text.Select_Digit)
+    __arm_cp.16_1                            0x00000858   Number         4  main.o(.text.Select_Digit)
+    __arm_cp.16_2                            0x0000085c   Number         4  main.o(.text.Select_Digit)
+    [Anonymous Symbol]                       0x00000860   Section        0  main.o(.text.Seven_Seg_Init)
+    __arm_cp.5_0                             0x0000088c   Number         4  main.o(.text.Seven_Seg_Init)
+    __arm_cp.5_1                             0x00000890   Number         4  main.o(.text.Seven_Seg_Init)
+    __arm_cp.5_2                             0x00000894   Number         4  main.o(.text.Seven_Seg_Init)
+    [Anonymous Symbol]                       0x00000898   Section        0  system_nuc100series.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x0000089c   Section        0  main.o(.text.TMR0_IRQHandler)
+    __arm_cp.32_0                            0x000008c0   Number         4  main.o(.text.TMR0_IRQHandler)
+    __arm_cp.32_1                            0x000008c4   Number         4  main.o(.text.TMR0_IRQHandler)
+    [Anonymous Symbol]                       0x000008c8   Section        0  main.o(.text.TMR0_Init)
+    __arm_cp.7_1                             0x0000093c   Number         4  main.o(.text.TMR0_Init)
+    __arm_cp.7_2                             0x00000940   Number         4  main.o(.text.TMR0_Init)
+    [Anonymous Symbol]                       0x00000944   Section        0  main.o(.text.TMR1_IRQHandler)
+    __arm_cp.35_0                            0x000009a4   Number         4  main.o(.text.TMR1_IRQHandler)
+    __arm_cp.35_2                            0x000009b4   Number         4  main.o(.text.TMR1_IRQHandler)
+    __arm_cp.35_5                            0x000009d0   Number         4  main.o(.text.TMR1_IRQHandler)
+    [Anonymous Symbol]                       0x000009d4   Section        0  main.o(.text.TMR1_Init)
+    __arm_cp.8_0                             0x00000a4c   Number         4  main.o(.text.TMR1_Init)
+    __arm_cp.8_1                             0x00000a50   Number         4  main.o(.text.TMR1_Init)
+    __arm_cp.8_2                             0x00000a54   Number         4  main.o(.text.TMR1_Init)
+    __arm_cp.8_3                             0x00000a58   Number         4  main.o(.text.TMR1_Init)
+    __arm_cp.8_4                             0x00000a5c   Number         4  main.o(.text.TMR1_Init)
+    [Anonymous Symbol]                       0x00000a60   Section        0  main.o(.text.Turn_Off_All_Digits)
+    [Anonymous Symbol]                       0x00000a84   Section        0  main.o(.text.main)
+    __arm_cp.0_0                             0x00000b04   Number         4  main.o(.text.main)
+    __arm_cp.0_1                             0x00000b08   Number         4  main.o(.text.main)
+    __arm_cp.0_2                             0x00000b0c   Number         4  main.o(.text.main)
+    __arm_cp.0_3                             0x00000b10   Number         4  main.o(.text.main)
     .bss                                     0x20000030   Section       96  libspace.o(.bss)
     [Anonymous Symbol]                       0x20000090   Section        0  main.o(.bss..L_MergedGlobals)
     current_row                              0x20000094   Data           4  main.o(.bss..L_MergedGlobals)
@@ -635,21 +635,21 @@ Image Symbol Table
     Handle_Keypad_Button_Press               0x000005a9   Thumb Code   188  main.o(.text.Handle_Keypad_Button_Press)
     Handle_Rotate_Button_Press               0x00000665   Thumb Code    44  main.o(.text.Handle_Rotate_Button_Press)
     Keypad_Init                              0x00000691   Thumb Code   116  main.o(.text.Keypad_Init)
-    LED_Init                                 0x00000705   Thumb Code    60  main.o(.text.LED_Init)
-    Record_Lap                               0x00000741   Thumb Code    48  main.o(.text.Record_Lap)
-    Reset_Stopwatch                          0x00000771   Thumb Code    24  main.o(.text.Reset_Stopwatch)
-    Rotate_Button_Init                       0x00000789   Thumb Code    84  main.o(.text.Rotate_Button_Init)
-    Select_Digit                             0x000007dd   Thumb Code   120  main.o(.text.Select_Digit)
-    Seven_Seg_Init                           0x00000855   Thumb Code    56  main.o(.text.Seven_Seg_Init)
-    SystemInit                               0x0000088d   Thumb Code     2  system_nuc100series.o(.text.SystemInit)
-    TMR0_IRQHandler                          0x00000891   Thumb Code    24  main.o(.text.TMR0_IRQHandler)
-    TMR0_Init                                0x000008a9   Thumb Code   124  main.o(.text.TMR0_Init)
-    TMR1_IRQHandler                          0x00000925   Thumb Code   144  main.o(.text.TMR1_IRQHandler)
-    TMR1_Init                                0x000009b5   Thumb Code   140  main.o(.text.TMR1_Init)
-    Turn_Off_All_Digits                      0x00000a41   Thumb Code    36  main.o(.text.Turn_Off_All_Digits)
-    main                                     0x00000a65   Thumb Code   144  main.o(.text.main)
-    Region$$Table$$Base                      0x00000af4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00000b14   Number         0  anon$$obj.o(Region$$Table)
+    LED_Init                                 0x00000705   Thumb Code    76  main.o(.text.LED_Init)
+    Record_Lap                               0x00000751   Thumb Code    48  main.o(.text.Record_Lap)
+    Reset_Stopwatch                          0x00000781   Thumb Code    24  main.o(.text.Reset_Stopwatch)
+    Rotate_Button_Init                       0x00000799   Thumb Code    84  main.o(.text.Rotate_Button_Init)
+    Select_Digit                             0x000007ed   Thumb Code   116  main.o(.text.Select_Digit)
+    Seven_Seg_Init                           0x00000861   Thumb Code    56  main.o(.text.Seven_Seg_Init)
+    SystemInit                               0x00000899   Thumb Code     2  system_nuc100series.o(.text.SystemInit)
+    TMR0_IRQHandler                          0x0000089d   Thumb Code    44  main.o(.text.TMR0_IRQHandler)
+    TMR0_Init                                0x000008c9   Thumb Code   124  main.o(.text.TMR0_Init)
+    TMR1_IRQHandler                          0x00000945   Thumb Code   144  main.o(.text.TMR1_IRQHandler)
+    TMR1_Init                                0x000009d5   Thumb Code   140  main.o(.text.TMR1_Init)
+    Turn_Off_All_Digits                      0x00000a61   Thumb Code    36  main.o(.text.Turn_Off_All_Digits)
+    main                                     0x00000a85   Thumb Code   144  main.o(.text.main)
+    Region$$Table$$Base                      0x00000b14   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000b34   Number         0  anon$$obj.o(Region$$Table)
     pattern                                  0x20000000   Data          44  main.o(.data.pattern)
     __libspace_start                         0x20000030   Data          96  libspace.o(.bss)
     __temporary_stack_top$libspace           0x20000090   Data           0  libspace.o(.bss)
@@ -666,9 +666,9 @@ Memory Map of the image
 
   Image Entry point : 0x00000165
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00000b40, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00000b60, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000b14, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000b34, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -743,31 +743,31 @@ Memory Map of the image
     0x000005a8   0x000005a8   0x000000bc   Code   RO           66    .text.Handle_Keypad_Button_Press  main.o
     0x00000664   0x00000664   0x0000002c   Code   RO          100    .text.Handle_Rotate_Button_Press  main.o
     0x00000690   0x00000690   0x00000074   Code   RO           30    .text.Keypad_Init   main.o
-    0x00000704   0x00000704   0x0000003c   Code   RO           32    .text.LED_Init      main.o
-    0x00000740   0x00000740   0x00000030   Code   RO           72    .text.Record_Lap    main.o
-    0x00000770   0x00000770   0x00000018   Code   RO           76    .text.Reset_Stopwatch  main.o
-    0x00000788   0x00000788   0x00000054   Code   RO           36    .text.Rotate_Button_Init  main.o
-    0x000007dc   0x000007dc   0x00000078   Code   RO           56    .text.Select_Digit  main.o
-    0x00000854   0x00000854   0x00000038   Code   RO           34    .text.Seven_Seg_Init  main.o
-    0x0000088c   0x0000088c   0x00000002   Code   RO            4    .text.SystemInit    system_nuc100series.o
-    0x0000088e   0x0000088e   0x00000002   PAD
-    0x00000890   0x00000890   0x00000018   Code   RO           88    .text.TMR0_IRQHandler  main.o
-    0x000008a8   0x000008a8   0x0000007c   Code   RO           38    .text.TMR0_Init     main.o
-    0x00000924   0x00000924   0x00000090   Code   RO           94    .text.TMR1_IRQHandler  main.o
-    0x000009b4   0x000009b4   0x0000008c   Code   RO           40    .text.TMR1_Init     main.o
-    0x00000a40   0x00000a40   0x00000024   Code   RO           46    .text.Turn_Off_All_Digits  main.o
-    0x00000a64   0x00000a64   0x00000090   Code   RO           24    .text.main          main.o
-    0x00000af4   0x00000af4   0x00000020   Data   RO          297    Region$$Table       anon$$obj.o
+    0x00000704   0x00000704   0x0000004c   Code   RO           32    .text.LED_Init      main.o
+    0x00000750   0x00000750   0x00000030   Code   RO           72    .text.Record_Lap    main.o
+    0x00000780   0x00000780   0x00000018   Code   RO           76    .text.Reset_Stopwatch  main.o
+    0x00000798   0x00000798   0x00000054   Code   RO           36    .text.Rotate_Button_Init  main.o
+    0x000007ec   0x000007ec   0x00000074   Code   RO           56    .text.Select_Digit  main.o
+    0x00000860   0x00000860   0x00000038   Code   RO           34    .text.Seven_Seg_Init  main.o
+    0x00000898   0x00000898   0x00000002   Code   RO            4    .text.SystemInit    system_nuc100series.o
+    0x0000089a   0x0000089a   0x00000002   PAD
+    0x0000089c   0x0000089c   0x0000002c   Code   RO           88    .text.TMR0_IRQHandler  main.o
+    0x000008c8   0x000008c8   0x0000007c   Code   RO           38    .text.TMR0_Init     main.o
+    0x00000944   0x00000944   0x00000090   Code   RO           94    .text.TMR1_IRQHandler  main.o
+    0x000009d4   0x000009d4   0x0000008c   Code   RO           40    .text.TMR1_Init     main.o
+    0x00000a60   0x00000a60   0x00000024   Code   RO           46    .text.Turn_Off_All_Digits  main.o
+    0x00000a84   0x00000a84   0x00000090   Code   RO           24    .text.main          main.o
+    0x00000b14   0x00000b14   0x00000020   Data   RO          297    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00000b14, Size: 0x0000002c, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00000b34, Size: 0x0000002c, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00000b14   0x0000002c   Data   RW          104    .data.pattern       main.o
+    0x20000000   0x00000b34   0x0000002c   Data   RW          104    .data.pattern       main.o
 
 
-    Execution Region ER_ZI (Exec base: 0x20000030, Load base: 0x00000b40, Size: 0x000004c8, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x20000030, Load base: 0x00000b60, Size: 0x000004c8, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -784,12 +784,12 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      1872        196          0         44        104       8900   main.o
-       100         46        192          0       1024        680   startup_nuc100series.o
-         2          0          0          0          0       2166   system_nuc100series.o
+      1904        196          0         44        104       8911   main.o
+       100         46        192          0       1024        700   startup_nuc100series.o
+         2          0          0          0          0       2183   system_nuc100series.o
 
     ----------------------------------------------------------------------
-      1976        242        224         44       1128      11746   Object Totals
+      2008        242        224         44       1128      11794   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          2          0          0          0          0          0   (incl. Padding)
 
@@ -839,15 +839,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      2612        262        224         44       1224      12226   Grand Totals
-      2612        262        224         44       1224      12226   ELF Image Totals
-      2612        262        224         44          0          0   ROM Totals
+      2644        262        224         44       1224      12274   Grand Totals
+      2644        262        224         44       1224      12274   ELF Image Totals
+      2644        262        224         44          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 2836 (   2.77kB)
+    Total RO  Size (Code + RO Data)                 2868 (   2.80kB)
     Total RW  Size (RW Data + ZI Data)              1268 (   1.24kB)
-    Total ROM Size (Code + RO Data + RW Data)       2880 (   2.81kB)
+    Total ROM Size (Code + RO Data + RW Data)       2912 (   2.84kB)
 
 ==============================================================================
 

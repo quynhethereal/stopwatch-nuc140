@@ -254,6 +254,11 @@ void LED_Init(void)
 
 	PC->PMD &= ~(0b11 << 26);
 	PC->PMD |= 0b01 << 26;
+// LED 8 
+
+	PC->PMD &= ~(0b11 << 30);
+	PC->PMD |= 0b01 << 30;
+
 }
 
 // this doesn't work
@@ -421,6 +426,12 @@ void Handle_Keypad_Button_Press(void)
 		LED7_toggle();
 		Pause_Stopwatch();
 		program_state = PAUSE_MODE;
+	}
+	// pause mode -> count mode: LED 6 on, resume stopwatch
+	else if (is_K1_Pressed == true && program_state == PAUSE_MODE) {
+		LED6_toggle();
+		Resume_Stopwatch();
+		program_state = COUNT_MODE;
 	}
 	// record lap time
 	else if (is_K9_Pressed == true && program_state == COUNT_MODE)
@@ -592,9 +603,11 @@ void Count_Stopwatch(void)
 
 void TMR0_IRQHandler(void)
 {
+	PC->DOUT &= ~(1 << 15); // Time the interrupt by watching pin C.15
 	Count_Stopwatch();
 
 	Clear_Pending_TMR0_INT();
+	PC->DOUT |= 1 << 15; // turn timer LED back off
 }
 
 void Pause_Stopwatch(void)
